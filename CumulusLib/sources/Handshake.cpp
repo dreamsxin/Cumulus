@@ -86,7 +86,7 @@ void Handshake::createCookie(PacketWriter& writer,HelloAttempt& attempt,const st
 	Cookie* pCookie = attempt.pCookie;
 	if(!pCookie) {
 		if(attempt.pTarget)
-			pCookie = new Cookie(invoker,tag,*attempt.pTarget);
+			pCookie = new Cookie(*this,invoker,tag,*attempt.pTarget);
 		else
 			pCookie = new Cookie(*this,invoker,tag,queryUrl);
 		_cookies[pCookie->value()] =  pCookie;
@@ -215,7 +215,7 @@ UInt8 Handshake::handshakeHandler(UInt8 id,PacketReader& request,PacketWriter& r
 				response.writeRaw(_certificat,sizeof(_certificat));
 				return 0x70;
 			} else
-				ERROR("Unkown handshake first way with '%02x' type",type);
+				ERROR("Unknown handshake first way with '%02x' type",type);
 			break;
 		}
 		case 0x38: {
@@ -260,7 +260,7 @@ UInt8 Handshake::handshakeHandler(UInt8 id,PacketReader& request,PacketWriter& r
 			break;
 		}
 		default:
-			ERROR("Unkown handshake packet id %u",id);
+			ERROR("Unknown handshake packet id %u",id);
 	}
 
 	return 0;

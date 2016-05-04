@@ -1,6 +1,8 @@
+:exclamation:	CumulusServer is made obsolete by [MonaServer]	:exclamation:
+
 CumulusServer is a complete open source and cross-platform RTMFP server extensible by way of scripting.
 
-CumulusServer has been developed under [GPL license] in keeping in mind the 5 following notions: *speed*, *light weight*, *cross-platform*, *scalable* and *elegant code*.
+CumulusServer has been developed under [GPL license] in keeping in mind the 4 following notions: *speed*, *light weight*, *cross-platform* and *scalable*.
 
 Even though there is no versioning released yet, code pushed on github is done only when CumulusServer has been tested and approved.
 
@@ -19,6 +21,7 @@ The community can talk about Cumulus on [openrtmfp-cumulus](http://groups.google
 You can **help us** enhance Cumulus by contacting me at cumulus.dev@gmail.com, or you can always make a **donation** ([us]|[eu]) so that we can spend more time on it. It's not technical skills which limit us but lack of time.
 
 
+[MonaServer]: https://github.com/MonaSolutions/MonaServer "MonaServer"
 [Wiki]: https://github.com/OpenRTMFP/Cumulus/wiki/_pages "Cumulus Wiki"
 [GPL license]: http://www.gnu.org/licenses/ "www.gnu.org/licenses"
 [us]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=M24B32EH2GV3A "Donation US"
